@@ -24,7 +24,8 @@ import {
   Target,
   MessageCircle,
   Lightbulb,
-  CheckCircle2
+  CheckCircle2,
+  Upload
 } from 'lucide-react'
 
 function App() {
@@ -438,7 +439,7 @@ function App() {
                       required 
                     />
                     <label htmlFor="cv" className="file-upload-label">
-                      <span className="file-upload-icon">📄</span>
+                      <Upload className="file-upload-icon" size={24} />
                       <span className="file-upload-text">Seleccionar archivo CV</span>
                     </label>
                   </div>
