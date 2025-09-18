@@ -85,8 +85,8 @@ function App() {
               className="hero-image-photo"
             />
             <div className="salary-highlight">
-              <span className="salary-amount">$744</span>
-              <span className="salary-label">Salario neto promedio</span>
+              <span className="salary-amount">$875</span>
+              <span className="salary-label">Salario bruto esperado</span>
             </div>
           </div>
         </div>
@@ -425,10 +425,27 @@ function App() {
                 <div className="form-group">
                   <label htmlFor="mensaje">¿Por qué te interesa trabajar con nosotros?</label>
                   <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos brevemente por qué quieres formar parte de Almacenes Sivar..." required></textarea>
-      </div>
+                </div>
+                <div className="form-group">
+                  <label htmlFor="cv">Subir CV (PDF, DOC, DOCX - Máx. 5MB)</label>
+                  <div className="file-upload-container">
+                    <input 
+                      type="file" 
+                      id="cv" 
+                      name="cv" 
+                      accept=".pdf,.doc,.docx" 
+                      className="file-input"
+                      required 
+                    />
+                    <label htmlFor="cv" className="file-upload-label">
+                      <span className="file-upload-icon">📄</span>
+                      <span className="file-upload-text">Seleccionar archivo CV</span>
+                    </label>
+                  </div>
+                </div>
                 <button type="submit" className="btn btn-primary form-submit">
                   Enviar Solicitud →
-        </button>
+                </button>
               </form>
             </div>
           </div>
